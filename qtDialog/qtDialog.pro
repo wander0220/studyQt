@@ -10,17 +10,13 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    widget.cpp \
-    ui_calculatorform.cpp
+    widget.cpp
 
 HEADERS += \
-    widget.h \
-    ui_calculatorform.h
+    widget.h
 
 FORMS += \
     widget.ui
-    #\
-    #calculatorform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
