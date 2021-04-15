@@ -2,7 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QPainter>
+
+#include <QtOpenGL>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -18,6 +19,5 @@ public:
 
 private:
     Ui::Widget *ui;
-    void paintEvent(QPaintEvent *event);
 };
 #endif // WIDGET_H
