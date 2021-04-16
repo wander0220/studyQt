@@ -13,11 +13,3 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::initializeGL()
-{
-
-}
-
-void Widget::resizeGL(int w, int h)
-{
-}

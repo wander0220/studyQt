@@ -3,8 +3,6 @@
 
 #include <QWidget>
 
-#include <QtOpenGL>
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -16,9 +14,6 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-
-    void initializeGL();
-    void resizeGL(int w, int h);
 
 private:
     Ui::Widget *ui;

@@ -1,31 +1,21 @@
-#include "widget.h"
-#include "ui_widget.h"
-
-#include <QTimer>
-#include <QPainter>
+#include "glwidget.h"
 #include "helper.h"
 
-Widget::Widget(QWidget *parent)
-    : QWidget(parent)
-    , ui(new Ui::Widget)
-{
-    ui->setupUi(this);
+#include <QTimer>
 
+GLWidget::GLWidget(Helper *helper,QWidget *parent)
+    : QWidget(parent)
+{
     elapsed = 0;
     setFixedSize(200,200);
+    setAutoFillBackground(false);
 }
-
-Widget::~Widget()
-{
-    delete ui;
-}
-
-void Widget::animate()
+void GLWidget::animate()
 {
     elapsed = (elapsed + qobject_cast<QTimer*>(sender())->interval()) % 1000;
     repaint();
 }
-void Widget::paintEvent(QPaintEvent *event)
+void GLWidget::paintEvent(QPaintEvent *event)
 {
     QPainter painter;
     painter.begin(this);
