@@ -1,7 +1,9 @@
 # Qt 공부 용~
 ### 참고
 
-    [https://www.youtube.com/watch?v=G03yX_GF5-c](https://www.youtube.com/watch?v=G03yX_GF5-c)
+    [](https://www.youtube.com/watch?v=G03yX_GF5-c)
+
+    [QT QML 시작하기 7 - QML 구조](https://saengjja.tistory.com/107?category=704862)
 
     [Qt 초간단 예제를 이용한 속성강의](https://blog.daum.net/goodgodgd/10)
 
@@ -85,6 +87,13 @@ Thread-Safety
 	- Semaphore (QSemaphore) : 프로세스 간 메시지를 전송하거나 공유 메모리 영역의 접근을 동기화 하는데 비교적 긴 시간을 확보해야하는 경우 사용.
 	- QtConcurrent : low-level 사용x, 프로세스 수에 따라 사용하는 쓰레드의 수를 자동으로 조절.
 
+
+### XML
+- SAX(수정불가 분석하면서 저장해 작은 메모리, Simple API for XML) vs DOM (트리 형태로 저장 후 읽음 수정 가능, Document Objecct Model)
+
+### Qt Quick과 QML
+- Qt Quick : GUI 쉽게 만드는 API
+- QML : Qt Modeling Language Qt Quick이 사용하는 언어
 
 
 
