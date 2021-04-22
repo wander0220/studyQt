@@ -68,15 +68,55 @@ Window {
 
 //    이미지는 없어서 생략~
 
-    Text {
+//    텍스트를 html 스타일로 꾸밀 수 있다!
+    /*Text {
         text: "<b>Hello World</b>"
         font.pointSize: 24
         color: "red"
+    }*/
+
+//    Anchors
+    /*Rectangle{
+        width: 300
+        height: 300
+        color: "lightblue"
+        id: rectangle1
+
+        Text {
+            text: qsTr("Centered Text");
+            color: "green"
+            font.pixelSize: 32;
+            anchors.centerIn:  rectangle1
+        }
+    }*/
+
+//    margin 사용 가능
+    /*
+    Rectangle{
+        width: 300
+        height: 100
+        color: "lightblue"
+        Text {
+            //y: 34
+            text: "Hello, World!"
+            font.pixelSize: 32
+            anchors.right: parent.right
+            anchors.rightMargin: 30
+        }
+    }*/
+
+    Rectangle{
+        id:button
+        property bool checked: false
+        property alias text: buttonText.text
+
+        Accessible.name: text;
+        Accessible.description: "This Button does "+Text {
+                                    id: name
+                                    text: qsTr("text")
+                                }
+
     }
-
-
-
-
 
 
 

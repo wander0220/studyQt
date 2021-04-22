@@ -7,6 +7,8 @@
 
     [Qt 초간단 예제를 이용한 속성강의](https://blog.daum.net/goodgodgd/10)
 
+    [개발자라면](https://flower0.tistory.com/399)
+
     [Qt프로그래밍(QtQuick) Beginner를 위한 글 읽는 순서 - Qt - makersweb](https://makersweb.net/qt/12205)
     [](https://softengn.tistory.com/3?category=945926)
     [](https://valueelectronic.tistory.com/13)
